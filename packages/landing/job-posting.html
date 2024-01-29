@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Разместить вакансию на поиск работников | Сервис РабСила</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="Version" content="v1.4.4.0" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.css" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+        <!-- Style Css-->
+        <link href="assets/css/style-green.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+				<a class="logo" href="index.html">
+					<img src="img/logo.svg" height="42" class="logo-light-mode" alt="">
+				</a>                
+				<!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login">Войти  </a>
+                    </li>
+					&ensp;/
+                    <li class="list-inline-item ps-1 mb-0">
+                         <a href="registration.html" class="">Регистрация  </a>
+                    </li>
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-left">
+                        <li><a href="job-posting.html" class="sub-menu-item">Разместить вакансию</a></li>
+                        <li><a href="about-us.html" class="sub-menu-item">О сервисе</a></li>
+                        <li><a href="#price" class="sub-menu-item">Тарифы</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+        <!-- About Start -->
+        <section class="section-theme">
+            <div class="container">
+				<div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h4 class="title mb-0"> Размещение вакансии </h4>
+							<div class="mx-auto">
+								<p class="mb-0 mt-3"><small class="text-dark me-2">Уже есть аккаунт?</small> <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login" class="text-dark fw-bold">Авторизоваться</a></p>
+							</div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->                            
+                <div class="row align-items-center justify-content-center mt-5">
+					<div class="col-md-11 col-lg-8">
+                        <div class="card rounded shadow p-4 border-0">
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+									
+									<div class="col-sm-12">
+                                        <label for="firstName" class="form-label">Название организации</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ПАО Сбербанк" value="" required="">
+                                    </div>
+        
+                                    <div class="col-sm-6">
+                                                <label class="form-label">Номер телефона : </label>
+                                                <div class="form-icon position-relative">
+                                                    <input type="number" id="number" class="form-control" placeholder="+7(999)999-99-99" required="">
+                                                </div>
+                                    </div>
+									
+									<div class="col-sm-6">
+                                                <label class="form-label">Email : <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <input type="email" class="form-control" placeholder="ivanov@mail.ru" name="email" required="">
+                                                </div>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <label for="lastName" class="form-label">Название вакансии <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="vacancy" placeholder="Грузчик на склад" value="" required="">
+                                    </div>
+									
+									<div class="col-12">
+                                        <label for="address" class="form-label">Адрес <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="address" placeholder="г. Краснодар, ул.Красная, 1" required="">
+                                    </div>
+									
+									<div class="col-md-6">
+                                        <label for="country" class="form-label">Тип вакансии <span class="text-danger">*</span></label>
+                                        <select class="form-select form-control" id="job type" required="">
+                                            <option value="">Постоянная работа</option>
+                                            <option>Разовая работа</option>
+                                            <option>Вахтовый метод</option>
+                                        </select>
+                                    </div>
+									
+									<div class="col-md-12">	
+											<label class="form-label">Описание вакансии <span class="text-danger">*</span></label>
+											<div class="form-icon position-relative">
+												<textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Выполнение погрузочных работ на складе сборного груза: сбор товара на поддоны, загрузка с использование ручной рохли. Склад с комфортной температурой. Масса грузов не превышает 10 кг. Дневные и ночные смены на выбор. Перерывы каждые 2 часа, полноценный часовой перерыв."></textarea>
+											</div>
+									</div>
+									
+									<div class="col-md-12">	
+											<label class="form-label">Требования к соискателю</label>
+											<div class="form-icon position-relative">
+												<textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Готовы рассмотреть сотрудников без опыта работы. Обязательно наличие медицинской книжки. Гражданство РФ."></textarea>
+											</div>
+									</div>
+
+                                    <div class="col-md-4">
+                                        <label for="country" class="form-label">Пол</label>
+                                        <select class="form-select form-control" id="pol" required="">
+                                            <option value="">Неважно</option>
+                                            <option>Мужской</option>
+                                            <option>Женский</option>
+                                        </select>
+                                    </div>
+									
+									<div class="col-md-4">
+                                        <label for="lastName" class="form-label">Мин. возраст</label>
+                                        <input type="text" class="form-control" id="vacancy" placeholder="18" value="" required="">
+                                    </div>
+									
+									<div class="col-md-4">
+                                        <label for="lastName" class="form-label">Макс. возраст</label>
+                                        <input type="text" class="form-control" id="vacancy" placeholder="65" value="" required="">
+                                    </div>									
+									
+									<div class="col-md-4">
+                                        <label for="country" class="form-label">Периодичность выплат <span class="text-danger">*</span></label>
+                                        <select class="form-select form-control" id="job type" required="">
+                                            <option value="">Еженедельно</option>
+                                            <option>Ежедневно</option>
+                                            <option>Ежемесячно</option>
+                                        </select>
+                                    </div>
+									
+									<div class="col-md-4">
+                                        <label for="lastName" class="form-label">Мин стоимость раб. смены<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="vacancy" placeholder="1000" value="" required="">
+                                    </div>									
+									
+									<div class="col-md-4">
+                                        <label for="lastName" class="form-label">Макс стоимость раб. смены<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="vacancy" placeholder="10000" value="" required="">
+                                    </div>
+																		
+									<div class="col-md-6">
+                                        <label for="country" class="form-label">Мин. длит. раб. смены</label>
+                                        <select class="form-select form-control" id="job type" required="">
+                                            <option value="">2 часа</option>
+                                            <option>3 часа</option>
+                                            <option>4 часа</option>											
+                                            <option>5 часов</option>																					
+                                            <option>6 часов</option>										
+                                            <option>7 часов</option>										
+                                            <option>8 часов</option>										
+                                            <option>9 часов</option>										
+                                            <option>10 часов</option>										
+                                            <option>11 часов</option>										
+                                            <option>12 часов</option>										
+                                            <option>13 часов</option>										
+                                            <option>14 часов</option>										
+                                            <option>15 часов</option>										
+                                            <option>16 часов</option>
+                                        </select>
+                                    </div>
+									
+									<div class="col-md-6">
+                                        <label for="country" class="form-label">Макс. длит. раб. смены</label>
+                                        <select class="form-select form-control" id="job type" required="">										
+                                            <option  value="">16 часов</option>										
+                                            <option>15 часов</option>										
+                                            <option>14 часов</option>										
+                                            <option>13 часов</option>										
+                                            <option>12 часов</option>										
+                                            <option>11 часов</option>									
+                                            <option>10 часов</option>										
+                                            <option>9 часов</option>										
+                                            <option>8 часов</option>										
+                                            <option>7 часов</option>																					
+                                            <option>6 часов</option>										
+                                            <option>5 часов</option>
+                                            <option>4 часа</option>	
+                                            <option>3 часа</option>	
+                                            <option>2 часа</option>
+                                        </select>
+                                    </div>
+                                </div>
+								<div class="mt-5">
+									<button type="button" class="btn btn-primary">Разместить вакансию</button> 
+									<a href="index.html" class="btn btn-outline-primary btn-mobile-w" data-dismiss="modal">Закрыть</a>
+								</div>		
+                            </form>
+                        </div>
+                    </div><!--end col-->
+				</div><!--end row-->
+			</div><!--end container-->
+		</section><!--end section-->			
+        
+		<!-- Footer Start -->
+		<footer class="footer footer-bar">
+			<div class="footer-py-30">
+				<div class="container text-left">
+					<div class="row align-items-center">
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-0 pt-sm-0">
+							<!-- Logo container-->
+							<a class="logo" href="index.html">
+								<img src="img/logo.svg" height="42" class="logo-light-mode" alt="">
+							</a>                
+							<!-- Logo End -->
+							
+						</div>
+												
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-0 pt-sm-0">
+							<div class="text-sm-end">
+								<a href="tel:79999999999" target="_blank" class="text-reset font-22 mb-0">8 999 999 99 99</a>
+							</div>
+						</div>
+					</div><!--end row-->
+				</div><!--end container-->
+			</div>
+		</footer><!--end footer-->
+		<!-- Footer End -->
+
+									<!-- Modal Content Start 
+									////////////////////////-->   
+
+
+									<!-- Login Form Start -->
+                                    <div class="modal fade" id="modal-login" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content rounded shadow border-0">
+                                                <div class="modal-body py-5 px-3">
+                                                    <div class="container-fluid px-0">
+                                                        <div class="row align-items-center g-0"> 
+																<div class="row text-center g-0">
+																	<h4>Авторизация</h4>
+																</div>
+                                                                <form class="login-form p-4">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div class="mb-3">
+                                                                                <div class="form-icon position-relative">
+                                                                                    <input type="text" class="form-control" placeholder="Логин" name="login" required="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div><!--end col-->
+                                
+                                                                        <div class="col-lg-12">
+                                                                            <div class="mb-3">
+                                                                                <div class="form-icon position-relative">
+                                                                                    <input type="password" class="form-control" placeholder="Пароль" required="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div><!--end col-->
+                                
+                                                                        <div class="col-lg-12">
+                                                                            <div class="d-flex justify-content-between">
+                                                                                <div class="mb-3">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                                                                        <label class="form-check-label" for="flexCheckDefault4">Запомнить меня</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p class="forgot-pass mb-0"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-password" class="text-dark fw-bold">Забыли пароль?</a></p>
+                                                                            </div>
+                                                                        </div><!--end col-->
+                                
+                                                                        <div class="col-lg-12 mb-0">
+                                                                            <div class="d-grid">
+                                                                                <button class="btn btn-primary">Войти</button>
+                                                                            </div>
+                                                                        </div><!--end col-->
+																		<div class="col-12 text-center">
+																			<p class="mb-0 mt-3"><small class="text-dark me-2">Нет аккаунта?</small> <a href="registration.html" class="text-dark fw-bold">Зарегистрироваться</a></p>
+																		</div><!--end col-->
+                                                                    </div><!--end row-->
+                                                                </form>
+                                                        </div><!--end row-->
+                                                    </div><!--end container-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Login Form End -->	
+
+									<!-- Forgout password Form Start -->
+                                    <div class="modal fade" id="modal-password" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content rounded shadow border-0">
+                                                <div class="modal-body py-5 px-3">
+                                                    <div class="container-fluid px-0">
+                                                        <div class="row align-items-center g-0">															
+																<h4 class="card-title text-center">Восстановление пароля</h4>  
+																<form class="login-form p-4">
+																	<div class="row">
+																		<p class="text-muted text-center">Пожалуйста, введите свой адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте.</p>																
+																		<div class="col-lg-12">
+																			<div class="mb-3">
+																				<div class="form-icon position-relative">
+																					<input type="email" class="form-control" placeholder="E-mail" name="email" required="">
+																				</div>
+																			</div>
+																		</div><!--end col-->
+																		<div class="col-lg-12">
+																			<div class="d-grid pt-4">
+																				<button class="btn btn-primary">Восстановить</button>
+																			</div>
+																		</div><!--end col-->
+																		<div class="mx-auto text-center">
+																			<p class="mb-0 mt-3"><small class="text-dark">Вспомнили пароль?</small> <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login" class="text-dark fw-bold">Войти</a></p>
+																		</div>
+																	</div>
+																</form>
+                                                        </div><!--end row-->
+                                                    </div><!--end container-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Forgout password Form End -->			
+									<!-- Modal Content End 
+									////////////////////////-->   									
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Javascript -->
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <!-- Main Js -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="assets/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+    </body>
+
+</html>

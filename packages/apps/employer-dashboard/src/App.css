@@ -1,0 +1,65 @@
+* {
+  font-family: Days;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customDotted {
+  border-bottom: 1px dotted #8492a6;
+}
+
+.customBorder {
+  border-right: 1px solid #F0F0F0;
+}
+
+.customBottomBorder {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.customWrap {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#backTop {
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#backTop:hover {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#backTop .customIcon {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#backTop:hover .customIcon {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+::-webkit-scrollbar-track {
+  /* Change the background color */
+  background-color: #f1f1f1;
+}
+
+/* Select the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  /* Change the background color */
+  background-color: #888;
+
+  /* Change the size of the thumb */
+  height: 30px;
+  width: 30px;
+}
+
+.has-error {
+  border-color: red;
+}

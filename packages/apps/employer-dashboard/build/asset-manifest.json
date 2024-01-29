@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2703654c.css",
+    "main.js": "/static/js/main.d4e5d55d.js",
+    "static/media/01.jpg": "/static/media/01.6ac85de7298319b1f8d5.jpg",
+    "static/media/Workld_Logo_Color_Hor_2-page-1.png": "/static/media/Workld_Logo_Color_Hor_2-page-1.5cd7604d86237b818a27.png",
+    "index.html": "/index.html",
+    "main.2703654c.css.map": "/static/css/main.2703654c.css.map",
+    "main.d4e5d55d.js.map": "/static/js/main.d4e5d55d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2703654c.css",
+    "static/js/main.d4e5d55d.js"
+  ]
+}

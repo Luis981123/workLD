@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Сервис поиска рабочих</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="Version" content="v1.4.4.0" />
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" />
+
+		<!-- Css -->
+		<link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+		<!-- Bootstrap Css -->
+		<link href="assets/css/bootstrap.css" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css" />
+		<!-- Icons Css -->
+		<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+		<!-- Style Css-->
+		<link href="assets/css/style-green.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />		
+		<link href="assets/css/style-custom.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style-custom-2.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		
+		<!-- Navbar Start -->
+		<header id="topnav" class="defaultscroll sticky navbar-white-bg">
+			<div class="container">
+				<!-- Logo container-->
+				<a class="logo" href="index.html">
+					<img src="img/logo.svg" height="42" class="logo-light-mode" alt="">
+				</a>                
+				<!-- Logo End -->
+
+				<!-- End Logo container-->
+				<div class="menu-extras">
+					<div class="menu-item">
+						<!-- Mobile menu toggle-->
+						<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+							<div class="lines">
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<!-- End mobile menu toggle-->
+					</div>
+				</div>
+
+				<!--Login button Start-->
+				<ul class="buy-button list-inline mb-0">
+					<li class="list-inline-item mb-0">
+						<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login">Войти  </a>
+					</li>
+					&ensp;/
+					<li class="list-inline-item ps-1 mb-0">
+						 <a href="registration.html" class="">Регистрация  </a>
+					</li>
+				</ul>
+				<!--Login button End-->
+
+				<div id="navigation">
+					<!-- Navigation Menu-->   
+					<ul class="navigation-menu nav-left">
+						<li><a href="job-posting.html" class="sub-menu-item">Разместить вакансию</a></li>
+						<li><a href="about-us.html" class="sub-menu-item">О сервисе</a></li>
+						<li><a href="#price" class="sub-menu-item">Тарифы</a></li>
+					</ul><!--end navigation menu-->
+				</div><!--end navigation-->
+			</div><!--end container-->
+		</header><!--end header-->
+		<!-- Navbar End -->
+
+		<!-- Hero Start -->
+		<section class="bg-half-200 d-table w-100 mt-4-625 overflow-hidden hero-homepage" id="home">
+			<div class="container">
+				<div class="row align-items-center home-wrap">
+					<div class="col-lg-7 my-auto pt-5 my-lg-0 pt-lg-0 home-title">
+						<div class="section-title me-lg-4 mb-9 mb-lg-0">
+							<h1 class="title-home mb-vh6 mb-lg-3">Сервис быстрого поиска персонала</h1>                            
+							<div class="row">   
+								<div class="col-12 pt-0 pt-lg-4  home-hero-btns">
+									<a href="job-posting.html" class="btn btn-primary mt-2 me-2 w-100 w-md-auto">Разместить вакансию</a>
+									<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-poisk" class="btn btn-outline-primary mt-2 me-2 w-100 w-md-auto">Поиск и подбор силами Исполнителя</a>
+								</div><!--end col-->
+							</div>
+						</div>
+					</div><!--end col-->
+					
+					<div class="col-lg-5 mt-auto mt-lg-0 position-sticky home-counter">
+						<div class="saas-feature-shape-right text-center text-white">
+							<p class="font-72 line-height-1">1 243 456</p> 
+							<p class="font-22 mb-3 hero-lh">кандидатов активно<br> ищут работу</p> 
+						</div>
+					</div><!--end col-->
+				</div><!--end row-->
+			</div><!--end container--> 
+		</section><!--end section-->
+		<!-- Hero End -->
+			
+		<!-- Start Video-->
+		<section class="section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0 pb-3 ">
+						<div class="section-title text-left">
+							<h4 class="title mb-4">Посмотрите короткое видео о нашей работе</h4>
+						</div>
+					</div><!--end col-->
+				</div>			
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<div class="video-solution-cta position-relative" style="z-index: 1;">
+							<div class="position-relative">
+								<img src="img/Rectangle 48.png" class="img-fluid rounded-md shadow-lg" alt="">
+								<div class="play-icon">
+									<a href="img/video-home.mp4" class="play-btn lightbox border-0">
+										<i class="mdi mdi-play text-primary rounded-circle shadow-lg"></i>
+									</a>
+								</div>
+							</div>                            
+						</div>
+					</div><!--end col-->
+				</div><!--end row -->
+			</div><!--end container-->
+		</section><!--end section-->
+		<!-- End -->
+		
+		<!-- Start Benefits-->
+		<section class="section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="order-2 order-md-1 mt-2 mt-sm-0 pt-2 pt-sm-0">
+						<div class="section-title text-left">
+							<h4 class="title mb-4">Преимущества</h4>
+						</div>
+					</div><!--end col-->
+				</div>			
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 col-12 mt-2 pt-2 border-r ">
+						<div class="d-flex features feature-primary feature-clean">
+							<div class="icons text-center mx-auto">
+								<i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+							</div>
+							<div class="content ms-4">
+								<h5 class="mb-1 text-dark">Узкая направленность деятельности</h5>
+							</div>
+						</div>
+										<div class="table-responsive bg-white align-items-top mt-4">
+											<table class="table mb-0 table-center">
+												
+												<tbody>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>концентрация соискателей, которые могут работать по разным специальностям</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>собственная платформа по поиску персонала, интегрированная в ТГ</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>поиск низкоквалифицированного персонала</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+					<hr class="mt-4 d-none-m" align="center" width="100%" size="1" color="#000" />				
+					</div><!--end col-->	
+					<div class="col-lg-4 col-md-6 col-12 mt-2 pt-2 border-r">
+						<div class="d-flex features feature-primary feature-clean ">
+							<div class="icons text-center mx-auto">
+								<i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+							</div>
+							<div class="content ms-4 me-4">
+								<h5 class="mb-1 text-dark">Удобство поиска персонала</h5>
+							</div>
+						</div>
+										<div class="table-responsive bg-white align-items-top mt-4">
+											<table class="table mb-0 table-center">
+												
+												<tbody>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>быстрое и простое размещение вакансии</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>удобный поиск</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>минимальные настройки поиска для получения  нужного результата</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>конфиденциальность ваших данных</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>возможность получить информацию об анкете соискателя прежде, чем связаться с ним</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+					<hr class="mt-4 d-none-m" align="center" width="100%" size="1" color="#000" />	
+					</div><!--end col-->
+					<div class="col-lg-4 col-md-6 col-12 mt-2 pt-2">
+						<div class="d-flex features feature-primary feature-clean">
+							<div class="icons text-center mx-auto">
+								<i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+							</div>
+							<div class="content ms-4">
+								<h5 class="mb-1 text-dark">Прозрачная ценовая политика</h5>
+							</div>
+						</div>
+										<div class="table-responsive bg-white align-items-top mt-4">
+											<table class="table mb-0 table-center">
+												
+												<tbody>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>среднерыночная стоимость размещения вакансии на определенный срок при  самостоятельном использовании функционала сайта</td>
+													</tr>
+													<tr>
+														<th width="1%">&#8226;</th>
+														<td>в случае помощи подбора персонала более выгодная стоимость и быстрое достижение цели, чем при сотрудничестве с кадровыми агенствами</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>					
+					</div><!--end col-->
+				</div><!--end row -->
+			</div><!--end container-->
+		</section><!--end section-->
+		
+		<!-- End Benefits-->				
+		
+		
+		<section class="section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0 tariff-title">
+						<div class="section-title text-left">
+							<h4 class="title">Тарифы</h4>
+						</div>
+					</div><!--end col-->
+				</div><!--end row-->
+				<div class="row">
+					<div class="col-xl-4 col-12 mt-2 pt-2">
+						<div class="card pricing pricing-primary bg-light py-3 border-0 rounded h-100">
+							<div class="card-body">
+											<h6 class="title name fw-bold text-uppercase mb-1">Стартовый</h6>
+											<div class="d-flex mb-4">
+												<span class="price h1 mb-0">Бесплатно</span>
+											</div>
+	
+											<ul class="list-unstyled mb-0 ps-0 pb-5">
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>самостоятельное размещение заявки</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>24 часа показа с момента активации</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>получение анкеты и прямого контакта соискателя</li>
+											</ul>
+									<div class="mt-auto">
+										<div class="row m-n1">
+											<div class="col-6 p-1">
+												<a href="javascript:void(0)" class="btn btn-primary w-100">Выбрать</a>
+											</div>
+											<div class="col-6 p-1">
+												<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-price01" class="btn btn-outline-primary btn-mobile-w">Подробнее</a>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div><!--end col-->
+
+					<div class="col-xl-4 col-12 mt-2 pt-2">
+						<div class="card pricing pricing-primary bg-light py-3 border-0 rounded h-100">
+							<div class="card-body">
+											<h6 class="title name fw-bold text-uppercase mb-1">Разовый</h6>
+											<div class="d-flex mb-4">
+												<span class="price h1 mb-0">500 </span>
+												<span class="h4 mb-0 mt-2">&#8381;</span>
+											</div>
+	
+											<ul class="list-unstyled mb-0 ps-0 pb-5">
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>самостоятельное размещение заявки</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>10 дней показа с момента активации</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>получение анкеты и прямого контакта соискателя</li>
+											</ul>
+									<div class="mt-auto">
+										<div class="row m-n1">
+											<div class="col-6 p-1">
+												<a href="javascript:void(0)" class="btn btn-primary w-100">Выбрать</a>
+											</div>
+											<div class="col-6 p-1">
+												<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-price" class="btn btn-outline-primary btn-mobile-w">Подробнее</a>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div><!--end col-->
+
+					<div class="col-xl-4 col-12 mt-2 pt-2">
+						<div class="card pricing pricing-primary bg-light py-3 border-0 rounded h-100">
+							<div class="card-body">
+											<h6 class="title name fw-bold text-uppercase mb-1">Персональный HR</h6>
+											<div class="d-flex mb-4">
+												<span class="price h1 mb-0">10 000 </span>
+												<span class="h4 mb-0 mt-2">&#8381;</span>
+											</div>
+	
+											<ul class="list-unstyled mb-0 ps-0 pb-5">
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>согласование текста вакансии с менеджером Исполнителя</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>поиск и подбор сотрудников менеджером исполнителя</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>предоставление проверенных анкет Заказчику</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>трудоустройство соискателей в штат Клиента</li>
+												<li class="text-muted mb-0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+									<path d="M12.4583 1.375H4.54167C2.79276 1.375 1.375 2.79276 1.375 4.54167V12.4583C1.375 14.2072 2.79276 15.625 4.54167 15.625H12.4583C14.2072 15.625 15.625 14.2072 15.625 12.4583V4.54167C15.625 2.79276 14.2072 1.375 12.4583 1.375Z" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.125 8.50002L7.90625 10.0834L10.875 6.91669" stroke="#08887E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>гарантия результата</li>
+											</ul>
+                                    <div class="mt-auto">
+                                        <div class="row m-n1">
+                                            <div class="col-6 p-1">
+                                                <a href="javascript:void(0)" class="btn btn-primary w-100">Выбрать</a>
+                                            </div>
+                                            <div class="col-6 p-1">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-price02" class="btn btn-outline-primary btn-mobile-w">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+							</div>
+						</div>
+					</div><!--end col-->
+				</div><!--end row-->                
+			</div><!--end container-->
+		</section><!--end section
+
+		<!-- Start FAQ-->
+		<section class="section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0 faq-title">
+						<div class="section-title text-center">
+							<h4 class="title mb-4">Часто задаваемые вопросы</h4>
+						</div>
+					</div><!--end col-->
+				</div>			
+				<div class="row justify-content-center pt-4">
+					<div class="col-12">
+						<div class="accordion" id="buyingquestion">
+											<div class="accordion-item rounded shadow-md">
+												<h2 class="accordion-header" id="headingOne">
+													<button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+														aria-expanded="false" aria-controls="collapseOne">
+														Почему он используется?
+													</button>
+												</h2>
+												<div id="collapseOne" class="accordion-collapse border-0 collapse" aria-labelledby="headingOne"
+													data-bs-parent="#buyingquestion">
+													<div class="accordion-body">
+														Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+													</div>
+												</div>
+											</div>
+											
+											<div class="accordion-item rounded shadow-md mt-4">
+												<h2 class="accordion-header" id="headingTwo">
+													<button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+														aria-expanded="true" aria-controls="collapseTwo">
+														Почему он используется?
+													</button>
+												</h2>
+												<div id="collapseTwo" class="accordion-collapse border-0 collapse show" aria-labelledby="headingTwo"
+													data-bs-parent="#buyingquestion">
+													<div class="accordion-body">
+														Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+													</div>
+												</div>
+											</div>
+				
+											<div class="accordion-item rounded shadow-md mt-4">
+												<h2 class="accordion-header" id="headingThree">
+													<button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse"
+														data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+														Почему он используется?
+													</button>
+												</h2>
+												<div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
+													data-bs-parent="#buyingquestion">
+													<div class="accordion-body">
+														Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+													</div>
+												</div>
+											</div>
+				
+											<div class="accordion-item rounded shadow-md mt-4">
+												<h2 class="accordion-header" id="headingFour">
+													<button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse"
+														data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+														Почему он используется?
+													</button>
+												</h2>
+												<div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
+													data-bs-parent="#buyingquestion">
+													<div class="accordion-body">
+														Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+													</div>
+												</div>
+											</div>
+						</div>
+					</div><!--end col-->
+					<div class="col-12 text-center">
+						<p class="text-dark mt-5">Вы можете <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-faq" class="text-dark fw-bold">задать свой вопрос</a> и мы в ближайшее время на него ответим </p>
+					</div><!--end col-->
+				</div><!--end row -->
+			</div><!--end container-->
+		</section><!--end section-->
+		<!-- End -->	
+	  
+		<!-- Footer Start -->
+		<footer class="footer footer-bar">
+			<div class="footer-py-30">
+				<div class="container text-left">
+					<div class="row align-items-center">
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-0 pt-sm-0">
+							<!-- Logo container-->
+							<a class="logo" href="index.html">
+								<img src="img/logo.svg" height="42" class="logo-light-mode" alt="">
+							</a>                
+							<!-- Logo End -->
+							
+						</div>
+												
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-0 pt-sm-0">
+							<div class="text-sm-end">
+								<a href="tel:79999999999" target="_blank" class="text-reset font-22 mb-0">8 999 999 99 99</a>
+							</div>
+						</div>
+					</div><!--end row-->
+				</div><!--end container-->
+			</div>
+		</footer><!--end footer-->
+		<!-- Footer End -->
+		
+									<!-- Modal Content Start 
+									//////////////////////////////-->
+									
+									<div class="modal fade" id="modal-poisk" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+										<div class="modal-dialog modal-lg modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-header border-bottom">
+													<h5 class="modal-title" id="LoginForm-title">Команда Исполнителя предлагает 3 варианта сотрудничества:</h5>
+													<button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+												</div>
+												<div class="modal-body">
+													<h4 class="title mb-4">Базовый</h4>
+													<p class="text-muted">1. Взаимодействие клиента с менеджером Исполнителя по созданию вакансии. По результатам этого этапа, вакансия клиента размещается менеджером в сервисе Исполнителя с целью получения откликов на вакансию.</p>
+													<p class="text-muted">2. Предоставление клиенту анкет соискателей. С каждым из соискателей предварительно проведено собеседование посредством аудио/видеосвязи менеджерами Исполнителя. Базовое количество анкет – 5 шт.</p>
+													<p class="text-muted">3. Взаимодействие клиента с соискателями без участия команды Исполнителя. </p>
+													<p class="text-muted">Стоимость пакета «Базовый» составляет 1500 рублей. При необходимости клиент может получить дополнительно 5 анкет по цене 1000 рублей.</p>
+													<h4 class="title mb-4">Базовый + Результат</h4>
+													<p class="text-muted">1. Предоставление клиенту анкет соискателей. С каждым из соискателей предварительно проведено собеседование посредством аудио/видеосвязи менеджерами Исполнителя. Клиенту предоставляется по 1 анкете. </p>
+													<p class="text-muted">2. Взаимодействие клиента с соискателями при участии команды Исполнителя. </p>
+													<p class="text-muted">3. Поиск и подбор соискателей происходит до момента трудоустройства соискателя. </p>
+													<p class="text-muted">Стоимость пакета «Базовый + Результат» составляет 5 000 рублей.</p>
+													<h4 class="title mb-4">Базовый + Результат + Гарантия</h4>
+													<p class="text-muted">Поиск и подбор соискателей происходит до момента трудоустройства соискателя. В случае, если новый сотрудник отработает менее 2-х месяцев в штате Клиента, команда Исполнителя возобновит поиск на прежних условиях или вернет вам деньги.</p>
+													<p class="text-muted">Стоимость пакета «Базовый + Результат + Гарантия» составляет 10 000 рублей</p>
+													<p class="text-muted">Для организации поиска и подбора персонала нашим специалистом вам необходимо зарегистрироваться на сайте, заполнив данные работодателя. Далее в личном кабинете в блоке «Поиск и подбор персонала командой Исполнителя» создать вакансию. При создании вакансии выбрать пакет услуг</p>
+												</div>
+												<div class="modal-footer">
+													 <a href="registration.html" class="btn btn-primary">Регистрация</a>
+												</div>
+											</div>
+										</div>
+									</div>
+		
+		
+									<div class="modal fade" id="modal-price01" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-header border-bottom">
+													<h5 class="modal-title" id="LoginForm-title">Бесплатное размещение</h5>
+													<button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+												</div>
+												<div class="modal-body">
+													<p class="mb-4">Для бесплатного размещения вакансии на ресурсе Исполнителя Вам необходимо зарегистрироваться на сайте, заполнив данные работодателя. Далее в личном кабинете в блоке «Вакансии» создать вакансию. При создании указать на бесплатный способ размещения. После модерации вакансия будет размещена на ресурсе Исполнителя на 24 часа. Вы сможете отслеживать отклики и связываться с потенциальными соискателями. После регистрации на сайте, Вы всегда сможете задать вопрос, написав в поддержку. Возможность бесплатного размещения доступна один раз.</p>                                                        
+												</div>
+												<div class="modal-footer d-grid">
+													<a href="registration.html" class="btn btn-primary">Регистрация</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								  
+								  
+									<div class="modal fade" id="modal-price02" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+										<div class="modal-dialog modal-lg modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-header border-bottom">
+													<h5 class="modal-title" id="LoginForm-title">Поиск и подбор с помощью нашего специалиста</h5>
+													<button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+												</div>
+												<div class="modal-body">
+													<p class="text-muted">Для организации поиска и подбора персонала нашим специалистом вам необходимо зарегистрироваться на сайте, заполнив данные работодателя. Далее в личном кабинете в блоке «Поиск и подбор персонала командой Исполнителя» создать вакансию. При создании вакансии выбрать пакет услуг:</p>
+													<h4 class="title mb-4">Базовый</h4>
+													<p class="text-muted">1. Взаимодействие клиента с менеджером Исполнителя по созданию вакансии. По результатам этого этапа, вакансия клиента размещается менеджером в сервисе Исполнителя с целью получения откликов на вакансию.</p>
+													<p class="text-muted">2. Предоставление клиенту анкет соискателей. С каждым из соискателей предварительно проведено собеседование посредством аудио/видеосвязи менеджерами Исполнителя. Базовое количество анкет – 5 шт.</p>
+													<p class="text-muted">3. Взаимодействие клиента с соискателями без участия команды Исполнителя. </p>
+													<p class="text-muted">Стоимость пакета «Базовый» составляет 1500 рублей. При необходимости клиент может получить дополнительно 5 анкет по цене 1000 рублей.</p>
+													<h4 class="title mb-4">Базовый + Результат</h4>
+													<p class="text-muted">1. Предоставление клиенту анкет соискателей. С каждым из соискателей предварительно проведено собеседование посредством аудио/видеосвязи менеджерами Исполнителя. Клиенту предоставляется по 1 анкете. </p>
+													<p class="text-muted">2. Взаимодействие клиента с соискателями при участии команды Исполнителя. </p>
+													<p class="text-muted">3. Поиск и подбор соискателей происходит до момента трудоустройства соискателя. </p>
+													<p class="text-muted">Стоимость пакета «Базовый + Результат» составляет 5 000 рублей.</p>
+													<h4 class="title mb-4">Базовый + Результат + Гарантия</h4>
+													<p class="text-muted">Поиск и подбор соискателей происходит до момента трудоустройства соискателя. В случае, если новый сотрудник отработает менее 2-х месяцев в штате Клиента, команда Исполнителя возобновит поиск на прежних условиях или вернет вам деньги.</p>
+													<p class="text-muted">Стоимость пакета «Базовый + Результат + Гарантия» составляет 10 000 рублей</p>
+												</div>
+												<div class="modal-footer">
+													 <a href="registration.html" class="btn btn-primary">Регистрация</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="modal fade" id="modal-price" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-header border-bottom">
+													<h5 class="modal-title" id="LoginForm-title">Разовое размещение</h5>
+													<button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+												</div>
+												<div class="modal-body">
+													<p class="mb-4">Для разового размещения вакансии на ресурсе Исполнителя Вам необходимо зарегистрироваться на сайте, заполнив данные работодателя. Далее в личном кабинете в блоке «Вакансии» создать вакансию. При создании указать на разовый способ размещения. После модерации вакансия будет размещена на ресурсе Исполнителя на 10 дней. Вы сможете отслеживать отклики и связываться с потенциальными соискателями. После регистрации на сайте, Вы всегда сможете задать вопрос, написав в поддержку или связаться с вашим менеджером.</p>                                                        
+												</div>
+												<div class="modal-footer d-grid">
+													<a href="registration.html" class="btn btn-primary">Регистрация</a>
+												</div>
+											</div>
+										</div>
+									</div>							
+									
+									<div class="modal fade" id="modal-faq" tabindex="-1" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-header border-bottom">
+													<h5 class="modal-title" id="LoginForm-title">Задать вопрос</h5>
+													<button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+												</div>
+												<div class="modal-body p-0">
+													<div class="container-fluid px-0">
+														<div class="row align-items-center g-0">
+																<form class="login-form p-4">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<div class="mb-3">
+																				<label class="form-label">Ваше имя <span class="text-danger">*</span></label>
+																				<div class="form-icon position-relative">
+																					<input name="name" id="name" type="text" class="form-control" placeholder=" ">
+																				</div>
+																			</div>
+																		</div><!--end col-->
+																		<div class="col-md-6">
+																			<div class="mb-3">
+																				<label class="form-label">Ваш Email <span class="text-danger">*</span></label>
+																				<div class="form-icon position-relative">
+																					<input name="email" id="email" type="email" class="form-control" placeholder=" ">
+																				</div>
+																			</div> 
+																		</div><!--end col-->
+																		<div class="col-md-12">
+																			<div class="mb-3">
+																				<label class="form-label">Ваш вопрос</label>
+																				<div class="form-icon position-relative">
+																					<textarea name="comments" id="comments" rows="4" class="form-control" placeholder=" "></textarea>
+																				</div>
+																			</div>
+																		</div>
+																	</div><!--end row-->
+																	<div class="row">
+																		<div class="col-sm-12">
+																			<input type="submit" id="submit" name="send" class="btn btn-primary" value="Отправить">
+																		</div><!--end col-->
+																	</div><!--end row-->
+																</form><!--end form-->
+														</div><!--end row-->
+													</div><!--end container-->
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Login Form Start -->
+									<div class="modal fade" id="modal-login" tabindex="-1" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-body py-5 px-3">
+													<div class="container-fluid px-0">
+														<div class="row align-items-center g-0"> 
+																<div class="row text-center g-0">
+																	<h4>Авторизация</h4>
+																</div>
+																<form class="login-form p-4">
+																	<div class="row">
+																		<div class="col-lg-12">
+																			<div class="mb-3">
+																				<div class="form-icon position-relative">
+																					<input type="text" class="form-control" placeholder="Логин" name="login" required="">
+																				</div>
+																			</div>
+																		</div><!--end col-->
+								
+																		<div class="col-lg-12">
+																			<div class="mb-3">
+																				<div class="form-icon position-relative">
+																					<input type="password" class="form-control" placeholder="Пароль" required="">
+																				</div>
+																			</div>
+																		</div><!--end col-->
+								
+																		<div class="col-lg-12">
+																			<div class="d-flex justify-content-between">
+																				<div class="mb-3">
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+																						<label class="form-check-label" for="flexCheckDefault4">Запомнить меня</label>
+																					</div>
+																				</div>
+																				<p class="forgot-pass mb-0"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-password" class="text-dark fw-bold">Забыли пароль?</a></p>
+																			</div>
+																		</div><!--end col-->
+								
+																		<div class="col-lg-12 mb-0">
+																			<div class="d-grid">
+																				<button class="btn btn-primary">Войти</button>
+																			</div>
+																		</div><!--end col-->
+																		<div class="col-12 text-center">
+																			<p class="mb-0 mt-3"><small class="text-dark me-2">Нет аккаунта?</small> <a href="registration.html" class="text-dark fw-bold">Зарегистрироваться</a></p>
+																		</div><!--end col-->
+																	</div><!--end row-->
+																</form>
+														</div><!--end row-->
+													</div><!--end container-->
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Login Form End -->	
+
+									<!-- Forgout password Form Start -->
+									<div class="modal fade" id="modal-password" tabindex="-1" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content rounded shadow border-0">
+												<div class="modal-body py-5 px-3">
+													<div class="container-fluid px-0">
+														<div class="row align-items-center g-0">															
+																<h4 class="card-title text-center">Восстановление пароля</h4>  
+																<form class="login-form p-4">
+																	<div class="row">
+																		<p class="text-muted text-center">Пожалуйста, введите свой адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте.</p>																
+																		<div class="col-lg-12">
+																			<div class="mb-3">
+																				<div class="form-icon position-relative">
+																					<input type="email" class="form-control" placeholder="E-mail" name="email" required="">
+																				</div>
+																			</div>
+																		</div><!--end col-->
+																		<div class="col-lg-12">
+																			<div class="d-grid pt-4">
+																				<button class="btn btn-primary">Восстановить</button>
+																			</div>
+																		</div><!--end col-->
+																		<div class="mx-auto text-center">
+																			<p class="mb-0 mt-3"><small class="text-dark">Вспомнили пароль?</small> <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login" class="text-dark fw-bold">Войти</a></p>
+																		</div>
+																	</div>
+																</form>
+														</div><!--end row-->
+													</div><!--end container-->
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Forgout password Form End -->										
+									<!-- Modal Content End 
+									////////////////////////-->       
+
+		<!-- Back to top -->
+		<a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+		<!-- Back to top -->
+
+		<!-- Javascript -->
+		<!-- JAVASCRIPT -->
+		<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- SLIDER -->
+		<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+		<!-- Main Js -->
+		<script src="assets/libs/feather-icons/feather.min.js"></script>
+		<script src="assets/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+		<script src="assets/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+		<script>
+			const anchors = document.querySelectorAll('a[href*="#"]')
+			for (let anchor of anchors) {
+			  anchor.addEventListener('click', function (e) {
+				e.preventDefault()
+				
+				const blockID = anchor.getAttribute('href').substr(1)
+				
+				document.getElementById(blockID).scrollIntoView({
+				  behavior: 'smooth',
+				  block: 'start'
+				})
+			  })
+			}
+		</script>
+	</body>
+
+</html>

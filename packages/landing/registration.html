@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Регистрация | Сервис поиска работы</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="Version" content="v1.4.4.0" />
+
+        <!-- favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.css" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+        <!-- Style Css-->
+        <link href="assets/css/style-green.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+				<a class="logo" href="index.html">
+					<img src="img/logo.svg" height="42" class="logo-light-mode" alt="">
+				</a>                
+				<!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login">Войти  </a>
+                    </li>
+					&ensp;/
+                    <li class="list-inline-item ps-1 mb-0">
+                         <a href="registration.html" class="">Регистрация  </a>
+                    </li>
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-left">
+                        <li><a href="job-posting.html" class="sub-menu-item">Разместить вакансию</a></li>
+                        <li><a href="about-us.html" class="sub-menu-item">О сервисе</a></li>
+                        <li><a href="#price" class="sub-menu-item">Тарифы</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+		<!-- Form Start -->
+        <section class="section-theme">
+            <div class="container">
+				<div class="pages-heading text-center">
+                    <h4 class="title mb-3"> Регистрация </h4>	
+                </div>
+				<div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 mt-4 pt-2 text-center">
+                        <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded bg-white shadow" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link rounded active" id="pills-cloud-tab" data-bs-toggle="pill" href="#pills-cloud" role="tab" aria-controls="pills-cloud" aria-selected="false">
+                                    <div class="text-center">
+                                        <h6 class="mb-0">ИП</h6>
+                                    </div>
+                                </a><!--end nav link-->
+                            </li><!--end nav item-->
+                            
+                            <li class="nav-item">
+                                <a class="nav-link rounded" id="pills-smart-tab" data-bs-toggle="pill" href="#pills-smart" role="tab" aria-controls="pills-smart" aria-selected="false">
+                                    <div class="text-center">
+                                        <h6 class="mb-0">Организация</h6>
+                                    </div>
+                                </a><!--end nav link-->
+                            </li><!--end nav item-->
+                            
+                            <li class="nav-item">
+                                <a class="nav-link rounded" id="pills-apps-tab" data-bs-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="false">
+                                    <div class="text-center">
+                                        <h6 class="mb-0">Физическое лицо</h6>
+                                    </div>
+                                </a><!--end nav link-->
+                            </li><!--end nav item-->
+                        </ul><!--end nav pills-->
+                    </div>
+                </div>
+                
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8 mt-4 pt-2">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-cloud" role="tabpanel" aria-labelledby="pills-cloud-tab">
+                                <div class="card rounded shadow p-4 border-0">
+									<form class="needs-validation" novalidate>
+										<div class="row g-3">
+											<div class="col-sm-12">
+												<label for="firstIp" class="form-label">Наименование</label>
+												<input type="text" class="form-control" id="firstIp" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-12">
+												<label for="uraddress" class="form-label">Юридический адрес</label>
+												<input type="text" class="form-control" id="uraddress" placeholder="" required="">
+											</div>
+											
+											<div class="col-12">
+												<label for="factaddress" class="form-label">Фактический адрес</label>
+												<input type="text" class="form-control" id="factaddress" placeholder="" required="">
+												<div class="form-check mt-2">
+													<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+													<label class="form-check-label" for="flexCheckDefault">Совпадает с юридическим </label>
+												</div>
+											</div>
+				
+											<div class="col-sm-6">
+												<label for="inn" class="form-label">ИНН</label>
+												<input type="text" class="form-control" id="inn" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-6">
+												<label for="ogrnip" class="form-label">ОГРНИП</label>
+												<input type="text" class="form-control" id="ogrnip" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-6">
+														<label class="form-label">Номер телефона : </label>
+														<div class="form-icon position-relative">
+															<input type="number" id="number" class="form-control" placeholder="" required="">
+														</div>
+											</div>
+											
+											<div class="col-sm-6">
+														<label class="form-label">Email : </label>
+														<div class="form-icon position-relative">
+															<input type="email" class="form-control" placeholder="" name="email" required="">
+														</div>
+											</div>	
+										</div>	
+											<div class="col-md-12">
+														<div class="mt-3">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+																<label class="form-check-label" for="flexCheckDefault">Oзнакомился с <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-pravilo">Правилами</a></label>
+															</div>
+														</div>
+											</div><!--end col-->
+													
+											<div class="mt-3">
+												<button type="button" class="btn btn-primary">Регистрация</button> 
+												<a href="index.html" class="btn btn-outline-primary btn-mobile-w">Отмена</a>
+											</div>		
+									</form>
+								</div>
+                            </div><!--end teb pane-->
+                            
+                            <div class="tab-pane fade" id="pills-smart" role="tabpanel" aria-labelledby="pills-smart-tab">
+                                <div class="card rounded shadow p-4 border-0">
+									<form class="needs-validation" novalidate>
+										<div class="row g-3">
+											<div class="col-sm-12">
+												<label for="firstIp" class="form-label">Наименование</label>
+												<input type="text" class="form-control" id="firstIp" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-12">
+												<label for="uraddress" class="form-label">Юридический адрес</label>
+												<input type="text" class="form-control" id="uraddress" placeholder="" required="">
+											</div>
+											
+											<div class="col-12">
+												<label for="factaddress" class="form-label">Фактический адрес</label>
+												<input type="text" class="form-control" id="factaddress" placeholder="" required="">
+												<div class="form-check mt-2">
+													<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+													<label class="form-check-label" for="flexCheckDefault">Совпадает с юридическим </label>
+												</div>
+											</div>
+				
+											<div class="col-sm-4">
+												<label for="inn" class="form-label">ИНН</label>
+												<input type="text" class="form-control" id="inn" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-4">
+												<label for="ogrnip" class="form-label">КПП</label>
+												<input type="text" class="form-control" id="ogrnip" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-4">
+												<label for="ogrnip" class="form-label">ОГРН</label>
+												<input type="text" class="form-control" id="ogrnip" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-6">
+														<label class="form-label">Номер телефона : </label>
+														<div class="form-icon position-relative">
+															<input type="number" id="number" class="form-control" placeholder="" required="">
+														</div>
+											</div>
+											
+											<div class="col-sm-6">
+														<label class="form-label">Email : </label>
+														<div class="form-icon position-relative">
+															<input type="email" class="form-control" placeholder="" name="email" required="">
+														</div>
+											</div>	
+										</div>	
+											<div class="col-md-12">
+														<div class="mt-3">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+																<label class="form-check-label" for="flexCheckDefault">Oзнакомился с <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-pravilo">Правилами</a></label>
+															</div>
+														</div>
+											</div><!--end col-->
+													
+											<div class="mt-3">
+												<button type="button" class="btn btn-primary">Регистрация</button> 
+												<a href="index.html" class="btn btn-outline-primary btn-mobile-w">Отмена</a>
+											</div>		
+									</form>
+								</div>                   
+                            </div><!--end teb pane-->
+
+                            <div class="tab-pane fade" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps-tab">
+                                <div class="card rounded shadow p-4 border-0">
+									<form class="needs-validation" novalidate>
+										<div class="row g-3">
+											<div class="col-sm-12">
+												<label for="name" class="form-label">ФИО</label>
+												<input type="text" class="form-control" id="name" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-6">
+												<label for="pasport" class="form-label">Серия и номер парспорта</label>
+												<input type="text" class="form-control" id="pasport" placeholder="" value="" required="">
+											</div>
+											
+											<div class="col-sm-6">
+												<label for="pasport2" class="form-label">Кем выдан</label>
+												<input type="text" class="form-control" id="pasport2" placeholder="" value="" required="">
+											</div>											
+											
+											<div class="col-12">
+												<label for="factaddress" class="form-label">Адрес по прописке</label>
+												<input type="text" class="form-control" id="factaddress" placeholder="" required="">
+											</div>	
+											
+											<div class="col-sm-6">
+														<label class="form-label">Номер телефона : </label>
+														<div class="form-icon position-relative">
+															<input type="number" id="number" class="form-control" placeholder="" required="">
+														</div>
+											</div>
+											
+											<div class="col-sm-6">
+														<label class="form-label">Email : </label>
+														<div class="form-icon position-relative">
+															<input type="email" class="form-control" placeholder="" name="email" required="">
+														</div>
+											</div>	
+										</div>	
+											<div class="col-md-12">
+														<div class="mt-3">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+																<label class="form-check-label" for="flexCheckDefault">Oзнакомился с <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-pravilo">Правилами</a></label>
+															</div>
+														</div>
+											</div><!--end col-->
+													
+											<div class="mt-3">
+												<button type="button" class="btn btn-primary">Регистрация</button> 
+												<a href="index.html" class="btn btn-outline-primary btn-mobile-w">Отмена</a>
+											</div>		
+									</form>
+								</div>                      
+                            </div><!--end teb pane-->
+                        </div><!--end tab content-->
+                    </div><!--end col-->
+                </div><!--end row-->
+			</div><!--end container-->
+		</section><!--end section-->			
+        
+		<!-- Footer Start -->
+		<footer class="footer footer-bar">
+			<div class="footer-py-30">
+				<div class="container text-left">
+					<div class="row align-items-center">
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-0 pt-sm-0">
+							<!-- Logo container-->
+							<a class="logo" href="index.html">
+								<img src="img/logo.svg" height="42" class="logo-light-mode" alt="">
+							</a>                
+							<!-- Logo End -->
+							
+						</div>
+												
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-0 pt-sm-0">
+							<div class="text-sm-end">
+								<a href="tel:79999999999" target="_blank" class="text-reset font-22 mb-0">8 999 999 99 99</a>
+							</div>
+						</div>
+					</div><!--end row-->
+				</div><!--end container-->
+			</div>
+		</footer><!--end footer-->
+		<!-- Footer End -->
+
+									<!-- Modal Content Start 
+									////////////////////////--> 
+									<!-- Rules --> 		
+									<div class="modal fade" id="modal-pravilo" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                            <div class="modal-content rounded shadow border-0">
+                                                <div class="modal-header border-bottom">
+                                                    <h5 class="modal-title" id="LoginForm-title">Правила сервиса</h5>
+                                                    <button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+												</div>
+                                                <div class="modal-body">
+													<p class="text-muted">Текст правил сервиса  Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса Текст правил сервиса </p>
+														<div class="mt-3">
+															<div class="form-check">
+																<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+																<label class="form-check-label" for="flexCheckDefault">Oзнакомился с Правилами</label>
+															</div>
+														</div>
+												</div>
+                                            </div>											
+                                        </div>
+                                    </div>		
+
+									<!-- Login Form Start -->
+                                    <div class="modal fade" id="modal-login" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content rounded shadow border-0">
+                                                <div class="modal-body py-5 px-3">
+                                                    <div class="container-fluid px-0">
+                                                        <div class="row align-items-center g-0"> 
+																<div class="row text-center g-0">
+																	<h4>Авторизация</h4>
+																</div>
+                                                                <form class="login-form p-4">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div class="mb-3">
+                                                                                <div class="form-icon position-relative">
+                                                                                    <input type="text" class="form-control" placeholder="Логин" name="login" required="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div><!--end col-->
+                                
+                                                                        <div class="col-lg-12">
+                                                                            <div class="mb-3">
+                                                                                <div class="form-icon position-relative">
+                                                                                    <input type="password" class="form-control" placeholder="Пароль" required="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div><!--end col-->
+                                
+                                                                        <div class="col-lg-12">
+                                                                            <div class="d-flex justify-content-between">
+                                                                                <div class="mb-3">
+                                                                                    <div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                                                                        <label class="form-check-label" for="flexCheckDefault4">Запомнить меня</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p class="forgot-pass mb-0"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-password" class="text-dark fw-bold">Забыли пароль?</a></p>
+                                                                            </div>
+                                                                        </div><!--end col-->
+                                
+                                                                        <div class="col-lg-12 mb-0">
+                                                                            <div class="d-grid">
+                                                                                <button class="btn btn-primary">Войти</button>
+                                                                            </div>
+                                                                        </div><!--end col-->
+																		<div class="col-12 text-center">
+																			<p class="mb-0 mt-3"><small class="text-dark me-2">Нет аккаунта?</small> <a href="registration.html" class="text-dark fw-bold">Зарегистрироваться</a></p>
+																		</div><!--end col-->
+                                                                    </div><!--end row-->
+                                                                </form>
+                                                        </div><!--end row-->
+                                                    </div><!--end container-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Login Form End -->	
+
+									<!-- Forgout password Form Start -->
+                                    <div class="modal fade" id="modal-password" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content rounded shadow border-0">
+                                                <div class="modal-body py-5 px-3">
+                                                    <div class="container-fluid px-0">
+                                                        <div class="row align-items-center g-0">															
+																<h4 class="card-title text-center">Восстановление пароля</h4>  
+																<form class="login-form p-4">
+																	<div class="row">
+																		<p class="text-muted text-center">Пожалуйста, введите свой адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте.</p>																
+																		<div class="col-lg-12">
+																			<div class="mb-3">
+																				<div class="form-icon position-relative">
+																					<input type="email" class="form-control" placeholder="E-mail" name="email" required="">
+																				</div>
+																			</div>
+																		</div><!--end col-->
+																		<div class="col-lg-12">
+																			<div class="d-grid pt-4">
+																				<button class="btn btn-primary">Восстановить</button>
+																			</div>
+																		</div><!--end col-->
+																		<div class="mx-auto text-center">
+																			<p class="mb-0 mt-3"><small class="text-dark">Вспомнили пароль?</small> <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-login" class="text-dark fw-bold">Войти</a></p>
+																		</div>
+																	</div>
+																</form>
+                                                        </div><!--end row-->
+                                                    </div><!--end container-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Forgout password Form End -->			
+									<!-- Modal Content End 
+									////////////////////////-->   									
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Javascript -->
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <!-- Main Js -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="assets/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+    </body>
+
+</html>
