@@ -785,7 +785,6 @@ function ModerationVacancyLists(props) {
                                                         onChange={handleChange}
                                                         options={list.manager.options}
                                                         isSearchable
-                                                    // isClearable
                                                     />
                                             }
                                         </td>
